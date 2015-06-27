@@ -1,3 +1,13 @@
+//  The Google WebFont Loader will look for this object, so create it before loading the script.
+WebFontConfig = {
+
+    //  The Google Fonts we want to load (specify as many as you like in the array)
+    google: {
+      families: ['News Cycle']
+    }
+
+};
+
 
 BasicGame.Preloader = function (game) {
 
@@ -23,6 +33,11 @@ BasicGame.Preloader.prototype = {
 		//this.load.setPreloadSprite(this.preloadBar);
 
 		//this.load.audio('titleMusic', ['audio/main_menu.mp3']);
+
+		//  Load the Google WebFont Loader script
+        this.load.script('webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js');
+
+        this.load.audio('music', ['audio/music.mp3']);
 	},
 
 	create: function () {
@@ -43,11 +58,11 @@ BasicGame.Preloader.prototype = {
 		//	If you don't have any music in your game then put the game.state.start line into the create function and delete
 		//	the update function completely.
 		
-		//if (this.cache.isSoundDecoded('titleMusic') && this.ready == false)
-		//{
-			//this.ready = true;
+		if (this.cache.isSoundDecoded('music') && this.ready == false)
+		{
+			this.ready = true;
 			this.state.start('Game');
-		//}
+		}
 
 	}
 

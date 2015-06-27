@@ -11,10 +11,29 @@
 
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    font-family: 'distant_galaxyregular';
+    font-family: 'sf_distant_galaxyregular';
     margin: 0px 0px 1px 0px; /* the extra 1px allows the iOS inner/outer check to work */
-    background: #000;
+    background: #fff;
+    position: relative;
+    height: 100%;
+}
+
+.font-loader {
+    position: absolute;
+    left: -1000em;
+}
+
+#game {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #orientation {
@@ -30,5 +49,12 @@ body {
     background-color: rgb(0, 0, 0);
     z-index: 999;
     display: none;
+}
+
+.star-wars-text {
+    display: none !important;
+    position: absolute;
+    -webkit-transform-origin: 50% 100%;
+    -web-kit-transform: perspective(300px) rotateX(25deg);
 }
 
