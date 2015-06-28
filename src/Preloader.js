@@ -3,7 +3,7 @@ WebFontConfig = {
 
     //  The Google Fonts we want to load (specify as many as you like in the array)
     google: {
-      families: ['News Cycle']
+      families: [ 'News+Cycle:400,700:latin' ]
     }
 
 };
