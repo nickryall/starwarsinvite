@@ -34,11 +34,11 @@ export default {
 
   showInfo() {
     // Type in the invite details
-    this.infoText = this.game.add.text(410, 250, 'Help us to celebrate Louis\' 5th birthday on 23 Aug 2015.\nThe party will be held at JUMP Trampoline Park,\n48 Arrenway Dr, Rosedale, Auckland 0632.\n\nChildren are encouraged to dress up as their favourite Hero/Villan. Food, drink and entertainment will be provided.', {
+    this.infoText = this.game.add.text(410, 250, '22 Aug 2015, 12.30pm - 2pm.\nThe Monkey Tree,\nUnit 10, 11 Silverfield\nWairau Valley, Auckland.\n\nChildren are encouraged to dress up as their favourite Hero/Villan. Food, drink and entertainment provided.', {
       font: `20px "${ app.fontFamily }"`,
       fill: '#fff',
       wordWrap: true,
-      wordWrapWidth: 520,
+      wordWrapWidth: 510,
       align: 'center'
     });
 
@@ -56,7 +56,7 @@ export default {
     this.rsvpButton.inputEnabled = true;
     this.rsvpButton.input.useHandCursor = true;
     this.rsvpButton.events.onInputUp.add(() => {
-      window.open('https://www.facebook.com/events/331218348435', '_blank');
+      window.open('https://www.facebook.com/events/921718427887495/', '_blank');
     });
 
     this.rsvpButtonTween = this.game.add.tween(this.rsvpButton).from({ alpha: 0 }, 3000,  Phaser.Easing.Quadratic.Out, true );

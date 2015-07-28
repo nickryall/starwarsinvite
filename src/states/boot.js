@@ -2,6 +2,7 @@ export default {
   init() {
     this.input.maxPointers = 1;
     this.disableVisibilityChange = false;
+    this.game.stage.smoothed = true;
 
     if (this.game.device.desktop) {
       this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
