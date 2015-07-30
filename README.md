@@ -1,6 +1,6 @@
 # Star Wars Invite - Built With Phaser
 
-This is a Star Wars birthday invitation I created for my kid's 5th birthday. It uses the Phaser Game Engine and is written in ES6 using Babel and WebPack for the build proccess.
+This is a Star Wars birthday invitation I created for my kid's 5th birthday. It uses the Phaser Game Engine and is written in ES6 using Babel and WebPack for the build process.
 
 # Local Setup
 
@@ -18,3 +18,6 @@ You can optionally run the app on a live URL using surge.sh:
 
 Note: You will need to install surge to acheive this. See http://surge.sh/ for more information.
 
+# Thanks
+
+Thanks to @HenrickJorteg for https://github.com/henrikjoreteg/hjs-webpack which I adapted for the build and deploy script and @photonstorm for https://github.com/photonstorm/phaser
